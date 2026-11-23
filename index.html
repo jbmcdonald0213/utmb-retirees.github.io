@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Retiree Benefits Tracker: TRS, Social Security &amp; Medicare | UTMB Retirees</title>
+<meta name="description" content="Tracking current and proposed cost-of-living adjustments for Teacher Retirement System of Texas (TRS) and Social Security.">
+<style>
+  :root {
+    --ink: #1d2430; --muted: #5a6474; --bg: #f7f5f1; --card: #ffffff;
+    --line: #e2ddd4; --accent: #7a1f2b; --accent-soft: #f6e9ea;
+    --ok: #1f6b45; --ok-soft: #e5f2ea; --warn: #8a5a00; --warn-soft: #fbf1dc;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: 19px; line-height: 1.6; color: var(--ink); background: var(--bg); }
+  header { background: var(--accent); color: #fff; padding: 2.2rem 1.25rem 1.8rem; }
+  header .wrap, main, footer { max-width: 920px; margin: 0 auto; }
+  header h1 { margin: 0 0 .4rem; font-size: 2rem; line-height: 1.2; }
+  header p { margin: 0; opacity: .92; font-family: system-ui, sans-serif; font-size: 1rem; }
+  .updated { display: inline-block; margin-top: .9rem; background: rgba(255,255,255,.16); padding: .3rem .75rem; border-radius: 999px; font-family: system-ui, sans-serif; font-size: .9rem; }
+  main { padding: 1.5rem 1.25rem 3rem; }
+  nav { font-family: system-ui, sans-serif; font-size: .95rem; margin-bottom: 1.5rem; }
+  nav a { color: var(--accent); margin-right: 1rem; white-space: nowrap; }
+  h2 { font-size: 1.5rem; border-bottom: 2px solid var(--line); padding-bottom: .3rem; margin-top: 2.5rem; }
+  h3 { font-size: 1.15rem; margin: 1.6rem 0 .4rem; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 1.1rem 1.2rem; }
+  .card .label { font-family: system-ui, sans-serif; font-size: .8rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+  .card .big { font-size: 2.3rem; font-weight: bold; line-height: 1.15; margin: .2rem 0; }
+  .card p { margin: .3rem 0 0; font-size: .95rem; }
+  .card.ok { border-left: 6px solid var(--ok); }
+  .card.warn { border-left: 6px solid var(--warn); }
+  .card.accent { border-left: 6px solid var(--accent); }
+  .callout { background: var(--warn-soft); border: 1px solid #ecd9ac; border-radius: 10px; padding: 1rem 1.2rem; margin: 1rem 0; }
+  .callout.info { background: var(--ok-soft); border-color: #c3e0cf; }
+  table { width: 100%; border-collapse: collapse; background: var(--card); font-size: .95rem; margin: .6rem 0 1rem; }
+  th, td { text-align: left; vertical-align: top; padding: .6rem .7rem; border-bottom: 1px solid var(--line); }
+  th { background: var(--accent-soft); font-family: system-ui, sans-serif; font-size: .82rem; text-transform: uppercase; letter-spacing: .04em; }
+  .tag { display: inline-block; font-family: system-ui, sans-serif; font-size: .75rem; padding: .1rem .5rem; border-radius: 999px; background: var(--accent-soft); color: var(--accent); white-space: nowrap; }
+  .tag.ok { background: var(--ok-soft); color: var(--ok); }
+  .tag.warn { background: var(--warn-soft); color: var(--warn); }
+  a { color: var(--accent); }
+  ol.sources, ul.log { font-size: .9rem; }
+  footer { padding: 1.5rem 1.25rem 3rem; font-family: system-ui, sans-serif; font-size: .85rem; color: var(--muted); }
+  @media (max-width: 640px) { body { font-size: 17px; } header h1 { font-size: 1.6rem; } table { font-size: .85rem; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>Retiree Benefits &amp; COLA Tracker</h1>
+    <p>TRS of Texas, Social Security, Medicare and other issues affecting Texas retirees, for UTMB retirees</p>
+    <span class="updated">Last updated: <time datetime="2026-11-22">November 22, 2026</time></span>
+  </div>
+</header>
+
+<main>
+<nav>
+  <a href="#glance">At a glance</a>
+  <a href="#trs">TRS proposals</a>
+  <a href="#ssa">Social Security</a>
+  <a href="#medicare">Medicare</a>
+  <a href="#other">Other retiree issues</a>
+  <a href="#dates">Dates to watch</a>
+  <a href="#sources">Sources</a>
+  <a href="#log">Update log</a>
+</nav>
+
+<!-- ===================== AT A GLANCE ===================== -->
+<section id="glance">
+<h2>At a glance</h2>
+<div class="grid">
+  <div class="card ok">
+    <div class="label">Social Security COLA for 2027</div>
+    <div class="big">3.6%</div>
+    <p>Announced Oct. 14, 2026; starts with January 2027 benefits. Average retired-worker benefit rises about $75/month, to roughly $2,163. (2026 COLA was 2.8%.)</p>
+  </div>
+  <div class="card warn">
+    <div class="label">TRS automatic COLA</div>
+    <div class="big">None</div>
+    <p>TRS pensions rise only when the Legislature passes a COLA. The last one took effect January 2024 (Proposition 9, 2023).</p>
+  </div>
+  <div class="card accent">
+    <div class="label">Medicare Part B, 2027</div>
+    <div class="big">$209.40</div>
+    <p>Standard monthly premium, up $6.50 from $202.90. Deductible: $292. Usually deducted from Social Security checks.</p>
+  </div>
+  <div class="card warn">
+    <div class="label">TRS funding period</div>
+    <div class="big">35 yrs</div>
+    <p>State law treats TRS as actuarially sound only if under 31 years. Above that, the Legislature cannot consider a COLA unless it also pays for it. New valuation due December 2026.</p>
+  </div>
+</div>
+
+<div class="callout">
+  <strong>Rumor check:</strong> There is <em>no</em> TRS COLA on the November 2026 ballot. Social media posts saying so refer to Proposition 9 from November 2023, which voters already approved (TRS statement, Sept. 2026).
+</div>
+</section>
+
+<!-- ===================== TRS ===================== -->
+<section id="trs">
+<h2>Teacher Retirement System of Texas</h2>
+
+<h3>Where things stand</h3>
+<p>The 90th Texas Legislature convenes <strong>January 12, 2027</strong>; bill prefiling opened November 9, 2026. The House and Senate are controlled by different parties this session, which may affect how far any benefit bill gets.</p>
+<p>As of the August 31, 2025 valuation, the TRS pension fund had a <strong>35-year funding period</strong>, a <strong>77.5% funded ratio</strong>, and a <strong>$64.9 billion unfunded liability</strong>. The liability rose mainly because of the 2025 teacher pay raises (HB 2), which the Legislature did not fund on the pension side. Because the fund is above the 31-year limit, any COLA or 13th check would have to come with new state money to cover its cost. <strong>The August 31, 2026 valuation, expected in December 2026, is the key number to watch.</strong></p>
+
+<h3>Bills filed for the 2027 session (90th Legislature)</h3>
+<table>
+  <thead><tr><th>Bill</th><th>Author</th><th>What it would do</th><th>Status</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><strong>HB 155</strong></td>
+      <td>Rep. Sergio Muñoz Jr.</td>
+      <td>Creates an <strong>annual COLA</strong> for TRS retirement, disability and certain death benefits, set each year by the TRS board using the same inflation index as Social Security (CPI-W). Begins with benefits paid on or after <strong>Jan. 1, 2028</strong>. A smaller increase or none if the full amount would put the fund's health at risk. No separate appropriation.</td>
+      <td><span class="tag">Filed 11/9/2026</span></td>
+    </tr>
+    <tr>
+      <td><strong>HB 1213</strong></td>
+      <td>Rep. Ana Hernandez</td>
+      <td>Automatic yearly COLA <strong>equal to the Social Security CPI-W increase</strong>, set by the TRS board in the last week of October, starting <strong>Jan. 1, 2028</strong>. Pays only if the board finds TRS actuarially sound and has money for it; if sound but short, pays the largest rate that keeps it sound. No appropriation or contribution-rate change. Identical to HB 2319 from 2025, which never got past committee.</td>
+      <td><span class="tag">Filed 11/17/2026</span></td>
+    </tr>
+    <tr>
+      <td><strong>SB 107</strong></td>
+      <td>Sen. José Menéndez</td>
+      <td>Captioned "relating to a cost-of-living adjustment applicable to certain benefits…" (full text not yet reviewed here). Sen. Menéndez filed TRS COLA bills in past sessions (SB 174 in 2025, SB 106 in 2021).</td>
+      <td><span class="tag">Filed 11/9/2026</span></td>
+    </tr>
+    <tr>
+      <td><em>Not yet confirmed</em></td>
+      <td>—</td>
+      <td>A House bill filed Nov. 9 is captioned "relating to cost-of-living adjustments applicable to certain benefits paid by the Teacher Retirement System of Texas and a biennial study on providing additional cost-of-living adjustments based on the effects of increased inflation." Bill number and author still to be confirmed.</td>
+      <td><span class="tag warn">Verifying</span></td>
+    </tr>
+  </tbody>
+</table>
+<p style="font-size:.9rem;color:var(--muted)">Prefiling continues until the session's bill-filing deadline in March 2027. This table will grow.</p>
+
+<h3>What retiree groups are asking for</h3>
+<p>The <strong>Texas Retired Teachers Association (TRTA)</strong>'s 2027 priorities ask the Legislature to (1) bring the TRS funding period back to 31 years or less, and (2) deliver a state-funded benefit increase: a stipend, COLA, or 13th check, with "all options on the table." TRTA says TRS retirees are, on average, about 30% behind inflation. <strong>Texas AFT</strong> and others continue to push for an automatic COLA tied to inflation.</p>
+
+<h3>Recent history</h3>
+<table>
+  <thead><tr><th>Year</th><th>What happened</th></tr></thead>
+  <tbody>
+    <tr><td>2025 (89th)</td><td>Several COLA bills were filed (HB 2319 Hernandez, HB 5191 Smithee: one-time 2%, SB 174 Menéndez, HB 3857 Bucy). <strong>None passed.</strong></td></tr>
+    <tr><td>Jan. 2024</td><td>Permanent one-time COLA under SB 10 / HJR 2 (Prop. 9): <strong>6%</strong> for those retired on or before 8/31/2001; <strong>4%</strong> for 9/1/2001–8/31/2013; <strong>2%</strong> for 9/1/2013–8/31/2020.</td></tr>
+    <tr><td>Sept. 2023</td><td>One-time stipends: $2,400 for retirees age 70–74, $7,500 for age 75+.</td></tr>
+    <tr><td>Before 2023</td><td>No TRS retiree who retired after Sept. 1, 2004 had ever received a COLA.</td></tr>
+  </tbody>
+</table>
+</section>
+
+<!-- ===================== SOCIAL SECURITY ===================== -->
+<section id="ssa">
+<h2>Social Security</h2>
+
+<h3>2027 COLA (final)</h3>
+<p>The Social Security Administration announced a <strong>3.6% increase</strong> on October 14, 2026, for nearly 72 million beneficiaries (about 76 million counting SSI). It applies to January 2027 benefits and is the largest increase in four years. The COLA is set by the change in the CPI-W (Consumer Price Index for Urban Wage Earners and Clerical Workers) from the third quarter of one year to the next.</p>
+<p><strong>Net effect after Medicare:</strong> The Part B premium is rising 3.2% ($6.50/month) to $209.40, which is less than the COLA. That is the first time since 2023 that Part B rose less than the COLA, so most people should keep most of the increase.</p>
+
+<div class="callout info">
+  <strong>For TRS retirees:</strong> The Social Security Fairness Act (signed January 2025) repealed the Windfall Elimination Provision (WEP) and Government Pension Offset (GPO). Many TRS retirees who also earned Social Security credits, or who are spouses or survivors of workers, now get larger Social Security checks, and those checks also receive the annual COLA.
+</div>
+
+<h3>Proposals in Congress to change the COLA</h3>
+<table>
+  <thead><tr><th>Proposal</th><th>What it would do</th><th>Outlook</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><strong>Social Security 2100 Act</strong> (reintroduced 2026)</td>
+      <td>Raises benefits 2% across the board. Bases the COLA on whichever is higher, CPI-W or CPI-E (the index for older Americans), for 2027–2036. Sets the minimum benefit at 125% of the poverty line. Applies payroll tax to earnings over $400,000.</td>
+      <td><span class="tag warn">Not law. GovTrack gives it ~0% odds.</span></td>
+    </tr>
+    <tr>
+      <td><strong>Boosting Benefits and COLAs for Seniors Act</strong></td>
+      <td>Bases the COLA on the higher of CPI-W or CPI-E. For comparison, a CPI-E-based COLA would have given about 3.0% for 2026 instead of 2.8%.</td>
+      <td><span class="tag warn">In committee</span></td>
+    </tr>
+    <tr>
+      <td><strong>Social Security Expansion Act</strong> (Sen. Sanders)</td>
+      <td>Expands benefits and switches COLAs to CPI-E.</td>
+      <td><span class="tag warn">In committee</span></td>
+    </tr>
+    <tr>
+      <td><strong>Social Security Emergency Inflation Relief Act</strong></td>
+      <td>Would have added $200/month from January to July 2026.</td>
+      <td><span class="tag">That window has passed</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Trust fund outlook (2026 Trustees Report, June 9, 2026)</h3>
+<p>The retirement (OASI) trust fund is projected to run out in <strong>late 2032</strong>, a year earlier than last year's estimate. The combined retirement and disability funds would last until <strong>2034</strong>. If Congress does nothing, incoming taxes would still cover about <strong>78%</strong> of scheduled retirement benefits after that date. Solvency legislation could also change how COLAs are calculated, so this is worth watching.</p>
+</section>
+
+<!-- ===================== MEDICARE ===================== -->
+<section id="medicare">
+<h2>Medicare</h2>
+
+<h3>2027 costs (final)</h3>
+<table>
+  <thead><tr><th>Item</th><th>2026</th><th>2027</th></tr></thead>
+  <tbody>
+    <tr><td>Part B standard monthly premium</td><td>$202.90</td><td><strong>$209.40</strong> (+$6.50, +3.2%)</td></tr>
+    <tr><td>Part B annual deductible</td><td>$283</td><td><strong>$292</strong></td></tr>
+    <tr><td>Part A hospital deductible (per benefit period)</td><td>$1,736</td><td><strong>$1,776</strong></td></tr>
+    <tr><td>Part D out-of-pocket cap on covered drugs</td><td>$2,100</td><td><strong>$2,400</strong></td></tr>
+    <tr><td>Part D maximum deductible</td><td>$615</td><td><strong>$700</strong></td></tr>
+  </tbody>
+</table>
+<p>Higher-income retirees pay an extra income-related surcharge (IRMAA) on top of the standard premium: <strong>$83.70 to $502.40/month for Part B</strong> and <strong>$15.40 to $96.40/month for Part D</strong> in 2027. IRMAA is based on your tax return from two years earlier, so a one-time income spike (a large IRA withdrawal or a home sale) can raise premiums later. In 2027, negotiated Medicare prices for 15 more high-cost drugs also take effect.</p>
+
+<h3>Your retiree health plan works alongside Medicare</h3>
+<div class="callout info">
+  <strong>UTMB / UT System retirees:</strong> Your retiree medical coverage comes from <strong>UT Benefits</strong>, not TRS-Care. When you become Medicare-eligible you're automatically enrolled in <strong>UT CARE Medicare PPO</strong>, a group Medicare Advantage plan. You must stay enrolled in Medicare Parts A and B. UT says there are <strong>no plan changes to UT CARE for 2027</strong>, and retiree-only medical coverage still costs <strong>$0</strong> out of pocket. Pre-65 retirees stay on UT SELECT. If you saw news about Blue Cross Blue Shield ending Medicare Advantage plans in 2027, UT has posted a clarification for UT CARE members on its UT CARE page.
+</div>
+<p><strong>For public-school (TRS-Care) retirees</strong>, TRS cut TRS-Care Medicare Advantage premiums by 27% for 2027, on top of an approximately 45% cut in 2025. Retiree-only coverage drops from $75 to <strong>$50/month</strong>, and retiree + spouse from $280 to $230. TRS-Care Standard (for retirees without Medicare) stays at $200/month for retiree-only, unchanged for the tenth year.</p>
+
+<h3>Proposals to lower the Medicare eligibility age</h3>
+<table>
+  <thead><tr><th>Proposal</th><th>What it would do</th><th>Status</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><strong>Improving Medicare Coverage Act</strong> (H.R. 10875)<br>Reps. Jayapal, Deluzio, Dingell, Ryan</td>
+      <td>Lowers the eligibility age from <strong>65 to 50</strong>. Also expands the Medicare Savings Program (help with premiums for lower-income enrollees) and drug-affordability help, and lets people under 400% of the poverty level who don't qualify for that program keep ACA Marketplace subsidies. Most provisions would start six months after enactment and expire after five years unless extended.</td>
+      <td><span class="tag">Introduced 10/22/2026</span></td>
+    </tr>
+    <tr>
+      <td><strong>Medicare at 50 Act</strong> (Senate)<br>Sen. Baldwin and others</td>
+      <td>Lets Americans ages <strong>50 to 64</strong> buy into Medicare.</td>
+      <td><span class="tag">Introduced Nov. 2026</span></td>
+    </tr>
+    <tr>
+      <td><strong>House Democratic leadership</strong></td>
+      <td>On Nov. 17, 2026, House Democratic Leader Hakeem Jeffries said Democrats should lower the eligibility age and add dental, vision and hearing coverage once they take control of the House in January. He did not name a target age.</td>
+      <td><span class="tag warn">Statement, no bill yet</span></td>
+    </tr>
+  </tbody>
+</table>
+<p><strong>Outlook:</strong> Neither the House nor the Senate bill has an official cost estimate. The largest age-lowering option the Congressional Budget Office has scored is eligibility at 60, which CBO estimated in 2022 would cost $155 billion through 2031. Any bill would need to pass both chambers and be signed by the president. Sponsors expect House action in 2027.</p>
+<p style="font-size:.9rem;color:var(--muted)">Why it matters to UTMB retirees: early retirees (under 65) currently rely on UT SELECT or ACA coverage. A lower Medicare age would change how those plans coordinate with Medicare, and could change what retirees and family members under 65 pay.</p>
+</section>
+
+<!-- ===================== OTHER ISSUES ===================== -->
+<section id="other">
+<h2>Other issues affecting Texas retirees</h2>
+
+<h3>Property taxes</h3>
+<p>Texas homeowners 65 and older get a <strong>$140,000 school-district homestead exemption plus an additional $60,000</strong> ($200,000 total, approved by voters in November 2025), and their school taxes are <strong>frozen</strong> at the level of the year they first qualified. The freeze can move with you, as a percentage, if you buy a new home. About 60% of Texas homeowners 65 and older now pay no school property tax. County, city and special-district taxes still apply, though many local governments offer their own senior exemptions or freezes (check your appraisal district). Proposals to eliminate school property taxes entirely are expected in the 2027 session.</p>
+
+<h3>Federal income taxes</h3>
+<ul>
+  <li><strong>Senior deduction:</strong> For tax years 2025 through 2028, people 65 and older can take an <strong>extra $6,000 deduction</strong> ($12,000 for a married couple who are both 65+), which phases out at higher incomes. It reduces taxes on all income, including TRS pensions and Social Security, but it is temporary unless Congress extends it.</li>
+  <li><strong>Texas has no state income tax</strong>, so TRS, ORP and Social Security income are taxed only federally.</li>
+  <li><strong>Required minimum distributions</strong> from IRAs, 403(b)s and ORP accounts start at age 73 (rising to 75 for people born in 1960 or later).</li>
+</ul>
+
+<h3>Other items</h3>
+<ul>
+  <li><strong>Optional Retirement Program (ORP):</strong> Some UTMB retirees chose ORP, a 401(k)-style plan, instead of the TRS pension. ORP has no COLA; its value depends on investments. TRS COLA bills don't apply to ORP.</li>
+  <li><strong>Working after retirement:</strong> TRS has return-to-work limits, and several 2027 bills address them (for example HB 1122). At UT institutions, returning to a benefits-eligible job moves you back to UT SELECT as primary coverage.</li>
+  <li><strong>Medicaid expansion:</strong> Bills filed for 2027 would expand Texas Medicaid eligibility. This could matter for lower-income early retirees or family members not yet on Medicare.</li>
+  <li><strong>Social Security Fairness Act:</strong> The 2025 repeal of WEP and GPO raised Social Security benefits for many TRS retirees. If you have work history covered by Social Security and haven't checked your benefit, contact SSA.</li>
+  <li><strong>Scams:</strong> False "COLA on the ballot" posts have circulated about TRS. TRS and SSA will not call or text asking for your bank or Social Security number.</li>
+</ul>
+</section>
+
+<!-- ===================== DATES ===================== -->
+<section id="dates">
+<h2>Dates to watch</h2>
+<table>
+  <thead><tr><th>When</th><th>What</th></tr></thead>
+  <tbody>
+    <tr><td>December 2026</td><td>TRS actuarial valuation as of Aug. 31, 2026 is released. It shows whether the funding period has moved toward the 31-year line.</td></tr>
+    <tr><td>Dec. 7, 2026</td><td>Medicare open enrollment ends (for individual Part D and Medicare Advantage plans; UT CARE enrollment ran Nov. 1–15).</td></tr>
+    <tr><td>Jan. 1, 2027</td><td>New Medicare premiums, deductibles and the $2,400 Part D cap take effect; new TRS-Care premiums take effect.</td></tr>
+    <tr><td>January 2027</td><td>New Congress convenes; Medicare-age bills would need to be reintroduced or acted on.</td></tr>
+    <tr><td>January 2027</td><td>First Social Security checks with the 3.6% COLA. Payment day depends on your birth date and when you started benefits.</td></tr>
+    <tr><td>Jan. 12, 2027</td><td>90th Texas Legislature convenes. Budget bills (HB 1 / SB 1) will show whether money is set aside for TRS retirees.</td></tr>
+    <tr><td>March 2027</td><td>Deadline for filing most bills in Texas (60th day of session).</td></tr>
+    <tr><td>Spring–summer 2027</td><td>2027 Social Security Trustees Report.</td></tr>
+    <tr><td>Late May / June 2027</td><td>Texas session ends (140 days); bill-signing deadline follows. Any COLA that needs a constitutional amendment would go to voters in November 2027.</td></tr>
+    <tr><td>October 2027</td><td>2028 Social Security COLA announced.</td></tr>
+  </tbody>
+</table>
+</section>
+
+<!-- ===================== SOURCES ===================== -->
+<section id="sources">
+<h2>Sources</h2>
+<ol class="sources">
+  <li><a href="https://www.ssa.gov/news/en/press/releases/2026-10-14.html">SSA press release: 3.6% benefit increase for 2027 (Oct. 14, 2026)</a></li>
+  <li><a href="https://www.ssa.gov/cola/">SSA COLA information page</a></li>
+  <li><a href="https://www.napa-net.org/news/2026/10/breaking-2027-social-security-cola-largest-increase-in-5-years/">NAPA: average benefit ~$2,163 after COLA</a></li>
+  <li><a href="https://www.moaa.org/content/publications-and-media/news-articles/2026-news-articles/benefits/what-youll-pay-for-medicare-part-b-in-2027/">MOAA: Medicare Part B 2027 premium</a></li>
+  <li><a href="https://401kspecialistmag.com/2027-medicare-part-b-premium-increase-smaller-than-social-security-cola/">401(k) Specialist: Part B increase smaller than COLA</a></li>
+  <li><a href="https://www.ssa.gov/oact/tr/2026/II_E_conclu.html">2026 OASDI Trustees Report: conclusion</a></li>
+  <li><a href="https://www.everycrsreport.com/reports/IF13256.html">CRS: Selected findings of the 2026 Trustees Report</a></li>
+  <li><a href="https://seniorsleague.org/this-years-cola-projection-holds-at-3-8/">Senior Citizens League: Social Security 2100 Act reintroduced</a></li>
+  <li><a href="https://liveoakinvestors.com/social-security-2026-bill-could-save-benefits-from-insolvency-and-impact-cola-increases-how-your-checks-could-change/">Fast Company (via Live Oak): 2100 Act CPI-E years and GovTrack odds</a></li>
+  <li><a href="https://www.myfederalretirement.com/boosting-cola-act-federal-retirees/">MyFederalRetirement: Boosting Benefits and COLAs for Seniors Act</a></li>
+  <li><a href="https://www.fool.com/retirement/2026/06/14/a-bigger-social-security-raise-than-the-cola-congr/">Motley Fool: Emergency Inflation Relief Act &amp; Social Security Expansion Act</a></li>
+  <li><a href="https://www.trs.texas.gov/about/who-we-are/fund-insights">TRS Fund Insights (funding period, funded ratio, unfunded liability)</a></li>
+  <li><a href="https://trs.texas.gov/files/documents/Leg-Appropriations-Request-FY28.pdf">TRS Legislative Appropriations Request FY28 (Aug. 2026)</a></li>
+  <li><a href="https://www.trs.texas.gov/files/documents/board-summary-2026-04.pdf">TRS Board summary, April 2026 (31-year rule)</a></li>
+  <li><a href="https://trs.texas.gov/about/legislative/legislation/2023-legislation/retiree-benefit-enhancements">TRS: 2023 Retiree Benefit Enhancements</a></li>
+  <li><a href="https://teachthevote.org/Our-Blog/Statement-from-TRS-Regarding-Circulating-Proposition-9-COLA-Information">TRS statement on Prop 9 rumors (via Teach the Vote)</a></li>
+  <li><a href="https://thetexasdispatch.com/hb-1213-trs-retired-teacher-cost-of-living-adjustment/">Texas Dispatch: HB 1213 (Nov. 19, 2026)</a></li>
+  <li><a href="https://perkinzwithaz.substack.com/p/a-new-era-for-texas-public-education">First education bills filed for 2027 (HB 155)</a></li>
+  <li><a href="https://capitol.texas.gov/Reports/Report.aspx?ID=filingDate&amp;LegSess=90R&amp;Code=2026-11-09">Texas Legislature Online: bills filed Nov. 9, 2026</a></li>
+  <li><a href="https://trta.org/trta-legislative/">TRTA legislative priorities (2027)</a></li>
+  <li><a href="https://www.texasaft.org/policy/retirement/unpacking-the-89th-legislature-your-right-to-a-secure-retirement/">Texas AFT: 89th session retirement recap</a></li>
+  <li><a href="https://www.tcta.org/capitol-updates/trs-benefits-agreed-on-in-conference-committee-senate-house-must-still-vote">TCTA: SB 10 (2023) COLA tiers</a></li>
+  <li><a href="https://www.texastribune.org/2026/11/09/texas-legislature-90th-session-bill-filing-begins/">Texas Tribune: bill filing begins for the 90th session</a></li>
+  <li><a href="https://www.kiplinger.com/retirement/medicare/what-you-will-pay-for-medicare-in-2027">Kiplinger: What you will pay for Medicare in 2027 (premiums, deductible, IRMAA)</a></li>
+  <li><a href="https://www.fingerlakes1.com/2026/11/19/medicare-part-b-premium-will-rise-to-209-40-a-month-in-2027/">Finger Lakes 1: 2027 Part A deductible</a></li>
+  <li><a href="https://www.curetoday.com/view/medicare-part-d-2027-what-a-2-400-cap-means-for-cancer-drugs">CURE: 2027 Part D cap and deductible</a></li>
+  <li><a href="https://www.newsweek.com/medicare-open-enrollment-started-3-major-changes-will-hit-seniors-in-2027-12595530">Newsweek: 2027 Medicare changes (negotiated drug prices)</a></li>
+  <li><a href="https://www.utsystem.edu/offices/employee-benefits/insurance/retired-employee-insurance/ut-care-medicare-plan">UT System: UT CARE Medicare Plan (no 2027 plan changes)</a></li>
+  <li><a href="https://www.utsystem.edu/offices/employee-benefits/insurance/premium-rates">UT System: premium rates ($0 retiree-only medical)</a></li>
+  <li><a href="https://trs.texas.gov/health-benefits/retiree-health/care-resources">TRS-Care plan resources: 2027 premiums</a></li>
+  <li><a href="https://trs.texas.gov/files/documents/plan-highlights-trs-care-2027.pdf">TRS-Care 2027 plan highlights</a></li>
+  <li><a href="https://jayapal.house.gov/2026/10/23/jayapal-deluzio-dingell-ryan-introduce-bill-to-lower-medicare-eligibility-age/">Rep. Jayapal: Improving Medicare Coverage Act</a></li>
+  <li><a href="https://burkeinsurancegroup.com/lower-medicare-eligibility-age/">Burke Insurance Group: H.R. 10875 provisions and timing</a></li>
+  <li><a href="https://www.kim.senate.gov/press_release/senator-kim-joins-baldwin-and-colleagues-in-introducing-bill-to-lower-age-of-medicare-eligibility-to-50-and-lower-healthcare-costs/">Sen. Kim: Medicare at 50 Act</a></li>
+  <li><a href="https://yournews.com/2026/11/17/7271539/democrats-hint-at-massive-medicare-expansion-in-120th-congress/">Medicare expansion in the 120th Congress (CBO estimate context)</a></li>
+  <li><a href="https://www.theepochtimes.com/us/jeffries-says-democrats-should-lower-medicare-age-add-dental-vision-hearing-coverage-6125910">Epoch Times: Jeffries on lowering the Medicare age</a></li>
+  <li><a href="https://comptroller.texas.gov/taxes/property-tax/appraisal-tax-limitations.php">Texas Comptroller: over-65 school tax ceiling</a></li>
+  <li><a href="https://247wallst.com/investing/2026/09/25/texas-retirees-can-freeze-part-of-their-property-tax-bill-at-65-but-moving-changes-the-math/">24/7 Wall St.: $140,000 + $60,000 exemptions and moving the freeze</a></li>
+  <li><a href="https://www.texastribune.org/2026/09/30/texas-property-tax-school-homestead-exemption-seniors/">Texas Tribune: 60% of seniors pay no school property tax</a></li>
+  <li><a href="https://www.irs.gov/newsroom/check-your-eligibility-for-the-new-enhanced-deduction-for-seniors">IRS: enhanced deduction for seniors</a></li>
+  <li><a href="https://communityimpact.com/central-austin/texas-legislature/data-centers-medicaid-and-gambling-texas-lawmakers-begin-filing-bills-ahead-of-2027-legislative-session/">Community Impact: 2027 Medicaid expansion bills</a></li>
+</ol>
+<p style="font-size:.85rem;color:var(--muted)">Useful places to check for yourself: <a href="https://capitol.texas.gov/">Texas Legislature Online</a> (search "Teacher Retirement System"), <a href="https://www.prb.texas.gov/">Texas Pension Review Board</a> bill-tracking reports, <a href="https://www.trs.texas.gov/">TRS</a>, and <a href="https://www.congress.gov/">Congress.gov</a>.</p>
+</section>
+
+<!-- ===================== UPDATE LOG ===================== -->
+<section id="log">
+<h2>Update log</h2>
+<ul class="log">
+  <li><strong>Nov. 22, 2026 (later):</strong> Added a Medicare section (2027 costs, IRMAA, UT CARE and TRS-Care, bills to lower the eligibility age to 50) and an "Other issues affecting Texas retirees" section (property taxes, the federal senior deduction, RMDs, ORP, return-to-work rules, Medicaid expansion, scams).</li>
+  <li><strong>Nov. 22, 2026:</strong> Page created. Covers the 2027 SS COLA (3.6%), 2027 Medicare Part B, the 2026 Trustees Report, Congressional COLA bills, TRS funding status, and the first 90th-session TRS COLA bills (HB 155, HB 1213, SB 107).</li>
+</ul>
+</section>
+</main>
+
+<footer>
+  <p>Compiled from public sources and checked for updates weekly. This page is for information only and isn't financial or legal advice. Confirm your own benefits with <a href="https://www.trs.texas.gov/">TRS</a> and <a href="https://www.ssa.gov/">SSA</a>.</p>
+</footer>
+</body>
+</html>
